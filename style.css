@@ -1,0 +1,276 @@
+
+/*
+    IS 409 - University Event Registration
+    Phi Chi Theta Spring 2027 Recruitment
+
+    Stylesheet for the recruitment interest form
+*/
+
+
+/* GENERAL PAGE STYLING */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f4f8;
+    color: #1d2d42;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #142c49;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.organization-name {
+    color: #f0ce88;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 10px auto;
+    max-width: 750px;
+}
+
+.header-description {
+    color: #e2e9f2;
+    font-size: 16px;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+/* INTRODUCTION */
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-intro h2 {
+    color: #142c49;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.form-intro p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.form-instructions {
+    font-weight: bold;
+    color: #40546d;
+}
+
+
+/* REGISTRATION FORM */
+
+#registrationForm {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #dce3ec;
+    box-shadow: 0 5px 20px rgba(20, 44, 73, 0.08);
+}
+
+
+/* FORM GROUPS AND LABELS */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #142c49;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+
+/* INPUTS, DROPDOWN, AND TEXTAREA */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #9caaba;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #1d2d42;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #65758a;
+}
+
+
+/* FOCUS STYLING FOR ACCESSIBILITY */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #285b8d;
+    outline: 3px solid #f0ce88;
+    outline-offset: 2px;
+}
+
+
+/* COMMENTS CHARACTER COUNTER */
+
+.character-count {
+    text-align: right;
+    font-size: 13px;
+    color: #52647b;
+    margin-top: 6px;
+}
+
+
+/* SUBMIT BUTTON */
+
+#submitButton {
+    display: block;
+    width: 100%;
+    background-color: #142c49;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#submitButton:hover {
+    background-color: #285b8d;
+}
+
+#submitButton:focus-visible {
+    outline: 3px solid #bd6519;
+    outline-offset: 3px;
+}
+
+
+/* ERROR AND SUCCESS MESSAGES */
+
+#feedback {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+    border-radius: 6px;
+}
+
+#feedback.error {
+    color: #a11e20;
+    background-color: #fff0f0;
+    border: 1px solid #e6b8b8;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+#feedback.success {
+    color: #176c38;
+    background-color: #edf9f0;
+    border: 1px solid #a8d5b5;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+
+/* INFORMATION BELOW FORM */
+
+.form-note {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #e6edf5;
+    border-left: 4px solid #142c49;
+    border-radius: 6px;
+}
+
+.form-note h2 {
+    font-size: 21px;
+    color: #142c49;
+    margin-top: 0;
+}
+
+.form-note p {
+    margin-bottom: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #142c49;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 6px 0;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    #registrationForm {
+        padding: 22px 18px;
+    }
+
+    .form-intro h2 {
+        font-size: 23px;
+    }
+
+    .form-note {
+        padding: 20px;
+    }
+}
