@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spring 2027 Recruitment | Phi Chi Theta</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <p class="organization-name">PHI CHI THETA</p>
+        <h1>Spring 2027 Recruitment Interest Form</h1>
+        <p class="header-description">
+            University of Illinois Urbana-Champaign
+        </p>
+    </header>
+
+    <main>
+
+        <section class="form-intro">
+            <h2>Interested in Joining PCT?</h2>
+
+            <p>
+                Phi Chi Theta is a professional business fraternity
+                focused on professional development, meaningful
+                connections, and community.
+            </p>
+
+            <p>
+                Complete the form below to express your interest
+                in Spring 2027 recruitment.
+            </p>
+
+            <p class="form-instructions">
+                Fields marked with * are required.
+                Comments are optional and limited to 250 characters.
+            </p>
+        </section>
+
+
+        <!-- RECRUITMENT INTEREST FORM -->
+
+        <form id="registrationForm" novalidate>
+
+            <!-- First Name -->
+
+            <div class="form-group">
+                <label for="firstName">
+                    First Name *
+                </label>
+
+                <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    autocomplete="given-name"
+                    required>
+            </div>
+
+
+            <!-- Last Name -->
+
+            <div class="form-group">
+                <label for="lastName">
+                    Last Name *
+                </label>
+
+                <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    autocomplete="family-name"
+                    required>
+            </div>
+
+
+            <!-- Email Address -->
+
+            <div class="form-group">
+                <label for="email">
+                    Email Address *
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="netid@illinois.edu"
+                    autocomplete="email"
+                    required>
+            </div>
+
+
+            <!-- Phone Number -->
+
+            <div class="form-group">
+                <label for="phone">
+                    Phone Number *
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="217-555-1234"
+                    autocomplete="tel"
+                    required>
+            </div>
+
+
+            <!-- Recruitment Event Selection -->
+
+            <div class="form-group">
+                <label for="event">
+                    Recruitment Event of Interest *
+                </label>
+
+                <select id="event" name="event" required>
+                    <option value="">
+                        -- Select an event --
+                    </option>
+
+                    <option value="info-night">
+                        Information Night
+                    </option>
+
+                    <option value="professional">
+                        Professional Development Event
+                    </option>
+
+                    <option value="social">
+                        Recruitment Social Event
+                    </option>
+
+                    <option value="all">
+                        All Recruitment Events
+                    </option>
+                </select>
+            </div>
+
+
+            <!-- Comments -->
+
+            <div class="form-group">
+                <label for="comments">
+                    Comments or Questions (Optional)
+                </label>
+
+                <textarea
+                    id="comments"
+                    name="comments"
+                    rows="5"
+                    maxlength="250"
+                    placeholder="What interests you about PCT? Any questions about recruitment?"></textarea>
+
+                <p id="characterCount" class="character-count">
+                    0 / 250 characters
+                </p>
+            </div>
+
+
+            <!-- Error and Success Feedback -->
+
+            <p
+                id="feedback"
+                role="status"
+                aria-live="polite">
+            </p>
+
+
+            <!-- Submit Button -->
+
+            <button type="submit" id="submitButton">
+                Submit Interest Form
+            </button>
+
+        </form>
+
+
+        <section class="form-note">
+            <h2>What's Next?</h2>
+
+            <p>
+                This form is a demonstration project for IS 409.
+                It does not submit or store personal information.
+                Completing it does not register you for
+                official Phi Chi Theta recruitment.
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Phi Chi Theta | UIUC | Spring 2027
+        </p>
+
+        <p>
+            IS 409 Web Technologies and Techniques
+        </p>
+    </footer>
+
+</body>
+
+</html>
